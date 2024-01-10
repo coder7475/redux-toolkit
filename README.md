@@ -1,9 +1,21 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # redux-toolkit
+
+Lear how to use redux toolkit in react app to setup redux way state management for a counter app
+
+## Steps:
+
+1. Install Redux Toolkit and React Redux Package
+<code>pnpm install @reduxjs/toolkit react-redux</code>
+
+2. Create recommended folder structure for redux toolkit 
+   features - app
+  
+3. Create Slice: collection of logic for a feature is called slice
+
+4. Create store in app folder
+
+5. Provide store in root file
+
+6. Create Counter Component
+
+7. Use store & dispatch actions
