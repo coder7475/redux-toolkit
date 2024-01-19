@@ -31,4 +31,12 @@ const todosSlice = createSlice({
   }
 })
 
-export default  todosSlice;
+// export the reducer and actions
+export const { 
+  increment, 
+  decrement, 
+  reset, 
+  increaseByNumber 
+} = todosSlice.actions;
+
+export default todosSlice.reducer;
