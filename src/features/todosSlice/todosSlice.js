@@ -14,9 +14,21 @@ const todosSlice = createSlice({
     error: null,
     todos: [],
   },
-  // extraReducers: (builder) => {
-
-  // }
+  extraReducers: (builder) => {
+    builder.addCase(fetchTodos.pending, (state) => {
+      state.isLoading = true;
+    })
+    builder.addCase(fetchTodos.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.todos = action.payload;
+      state.error = null;
+    })
+    builder.addCase(fetchTodos.rejected, (state, action) => {
+      state.isLoading = false;
+      state.todos = [];
+      state.error = action.payload;
+    })
+  }
 })
 
 export default  todosSlice;
