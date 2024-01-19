@@ -26,7 +26,7 @@ const todosSlice = createSlice({
     builder.addCase(fetchTodos.rejected, (state, action) => {
       state.isLoading = false;
       state.todos = [];
-      state.error = action.payload;
+      state.error = action.error.message;
     })
   }
 })
